@@ -1,0 +1,58 @@
+set -tmpdir ../synth/__projnav 
+set -xsthdpdir ../synth/xst
+run 
+#Source Parameters
+-ifn ../synth/mig.prj
+-ifmt mixed
+-iuc No
+#Target Parameters
+-ofn mig
+-ofmt NGC
+-p xc6slx25-2csg324
+-define AXI_ENABLE
+#Source Options
+-top mig
+-fsm_extract Yes 
+-fsm_encoding one-hot 
+-safe_implementation No
+-fsm_style lut
+-ram_extract Yes
+-ram_style Auto
+-rom_extract Yes
+-rom_style Auto
+-shreg_extract Yes
+-resource_sharing Yes
+-async_to_sync no
+-mult_style auto
+-register_balancing No
+#Target Options
+-iobuf Yes
+#Max fanout value shouldn't be set below 64 for MCB design
+-max_fanout 500
+-bufg 16 
+-register_duplication yes
+-optimize_primitives No
+-use_clock_enable Auto 
+-use_sync_set Auto   
+-use_sync_reset Auto 
+-iob auto
+-equivalent_register_removal yes
+#General Options
+-opt_mode Speed
+-opt_level 1
+-lso ../synth/mig.lso
+-keep_hierarchy NO
+-netlist_hierarchy as_optimized
+-rtlview Yes
+-glob_opt allclocknets
+-read_cores Yes
+-write_timing_constraints No
+-cross_clock_analysis No
+-hierarchy_separator /
+-bus_delimiter <>
+-case maintain
+-slice_utilization_ratio 100
+-bram_utilization_ratio 100
+-auto_bram_packing No
+-slice_utilization_ratio_maxmargin 5
+quit

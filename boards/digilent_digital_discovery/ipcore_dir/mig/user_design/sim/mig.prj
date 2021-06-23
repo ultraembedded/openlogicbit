@@ -1,0 +1,58 @@
+verilog  work  ../rtl/infrastructure.v
+verilog  work  ../rtl/memc_wrapper.v
+verilog  work  ../rtl/mig.v
+verilog  work  ../rtl/axi/a_upsizer.v
+verilog  work  ../rtl/axi/axi_mcb.v
+verilog  work  ../rtl/axi/axi_mcb_ar_channel.v
+verilog  work  ../rtl/axi/axi_mcb_aw_channel.v
+verilog  work  ../rtl/axi/axi_mcb_b_channel.v
+verilog  work  ../rtl/axi/axi_mcb_cmd_arbiter.v
+verilog  work  ../rtl/axi/axi_mcb_cmd_fsm.v
+verilog  work  ../rtl/axi/axi_mcb_cmd_translator.v
+verilog  work  ../rtl/axi/axi_mcb_incr_cmd.v
+verilog  work  ../rtl/axi/axi_mcb_r_channel.v
+verilog  work  ../rtl/axi/axi_mcb_simple_fifo.v
+verilog  work  ../rtl/axi/axi_mcb_w_channel.v
+verilog  work  ../rtl/axi/axi_mcb_wrap_cmd.v
+verilog  work  ../rtl/axi/axi_register_slice.v
+verilog  work  ../rtl/axi/axi_upsizer.v
+verilog  work  ../rtl/axi/axic_register_slice.v
+verilog  work  ../rtl/axi/carry.v
+verilog  work  ../rtl/axi/carry_and.v
+verilog  work  ../rtl/axi/carry_latch_and.v
+verilog  work  ../rtl/axi/carry_latch_or.v
+verilog  work  ../rtl/axi/carry_or.v
+verilog  work  ../rtl/axi/command_fifo.v
+verilog  work  ../rtl/axi/comparator.v
+verilog  work  ../rtl/axi/comparator_mask.v
+verilog  work  ../rtl/axi/comparator_mask_static.v
+verilog  work  ../rtl/axi/comparator_sel.v
+verilog  work  ../rtl/axi/comparator_sel_mask.v
+verilog  work  ../rtl/axi/comparator_sel_mask_static.v
+verilog  work  ../rtl/axi/comparator_sel_static.v
+verilog  work  ../rtl/axi/comparator_static.v
+verilog  work  ../rtl/axi/mcb_ui_top_synch.v
+verilog  work  ../rtl/axi/mux_enc.v
+verilog  work  ../rtl/axi/r_upsizer.v
+verilog  work  ../rtl/axi/w_upsizer.v
+verilog  work  ../rtl/mcb_controller/iodrp_controller.v
+verilog  work  ../rtl/mcb_controller/iodrp_mcb_controller.v
+verilog  work  ../rtl/mcb_controller/mcb_raw_wrapper.v
+verilog  work  ../rtl/mcb_controller/mcb_soft_calibration.v
+verilog  work  ../rtl/mcb_controller/mcb_soft_calibration_top.v
+verilog  work  ../rtl/mcb_controller/mcb_ui_top.v
+verilog  work  ./axi4_tg.v
+verilog  work  ./axi4_wrapper.v
+verilog  work  ./cmd_prbs_gen_axi.v
+verilog  work  ./data_gen_chk.v
+verilog  work  ./s6_axi4_tg.v
+verilog  work  ./tg.v
+verilog work ../rtl/memc_wrapper.v -d AXI_ENABLE
+verilog  work  $XILINX/verilog/src/glbl.v
+verilog  work  ./sim_tb_top.v
+verilog  work  ./ddr3_model_c3.v -d x2Gb -d sg125 -d x16 -i ./
+
+
+
+
+
