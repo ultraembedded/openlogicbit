@@ -31,3 +31,5 @@ This project aims to support FPGA boards with 10's MBs of capture memory (such a
 Compatible with Sigrok (via libsigrok), based on the following fork;
 * [https://github.com/ultraembedded/libsigrok](https://github.com/ultraembedded/libsigrok)
 
+*open-logic-bit also contains a built in test mode;*
+![Demo-counter](docs/pulseview_counter.png)
