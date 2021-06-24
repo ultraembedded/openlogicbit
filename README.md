@@ -6,9 +6,11 @@ Github: [https://github.com/ultraembedded/openlogicbit](https://github.com/ultra
 ![Demo-uart](docs/pulseview_uart.png)
 
 ## Aims
-A logic analyzer project which aims to provide reliable, high speed, large capture depth, open-source gateware that can be used on a FPGA development board you already own, or as replacement gateware for commercial logic analysers that do not work with open-source tools such as [sigrok](https://sigrok.org/).
+A logic analyzer project which aims to provide reliable, high speed (100MHz+), large capture depth, open-source gateware that can be used on a FPGA development board you already own, or as replacement gateware for commercial logic analysers that do not work with open-source tools such as [sigrok](https://sigrok.org/).
 
-This project aims to support FPGA boards with 10's MBs of capture memory (such as DDR3), which also have high-speed USB interfaces.
+This project aims to support FPGA boards with 10's MBs of capture memory (such as DDR3), which also have high-speed USB interfaces from which to download the captured data.
+
+There are a number of other open-source logic analyzer projects, but these mostly focus on using limited internal FPGA memories (embedded block RAMs), and low-performance host interfaces (UART).
 
 ## Features
 * 16, 24, 32 input channels supported.
